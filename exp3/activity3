@@ -1,0 +1,9 @@
+def count_stairs(n):
+    if n == 0:
+        return 0
+    else:
+        return 1 + count_stairs(n - 1)
+
+# Example usage
+steps = int(input("Enter number of steps: "))
+print("Total stairs climbed:", count_stairs(steps))
