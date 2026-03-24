@@ -1,0 +1,10 @@
+source = open("source.txt", "r")
+dest = open("backup.txt", "w")
+
+for line in source:
+    dest.write(line)
+
+source.close()
+dest.close()
+
+print("Data copied successfully.")
