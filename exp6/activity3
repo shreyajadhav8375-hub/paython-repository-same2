@@ -1,0 +1,7 @@
+file = open("complaints.txt", "r")
+
+print("All Complaints:")
+for line in file:
+    print(line.strip())
+
+file.close()
